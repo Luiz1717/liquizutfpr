@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp"
+    tools:context="com.liquiz.utfprliquiz.ResultActivity">
+
+    <!-- Título do Resultado -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/result_title_text_size"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/large_margin"/>
+
+    <!-- Resultado (Acertos) -->
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/result_score_text_size"
+        android:layout_marginTop="@dimen/xlarge_margin"
+        tools:text="15 / 15 Acertos"/>
+
+    <!-- Pontuação Total -->
+    <TextView
+        android:id="@+id/totalScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/result_total_text_size"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/xlarge_margin"
+        tools:text="PONTOS: 150"/>
+
+    <!-- Botão de Retorno -->
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/return_button"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_primary"
+        android:textSize="@dimen/button_text_size"
+        android:layout_marginTop="@dimen/xlarge_margin"
+        android:onClick="returnTop"/>
+</LinearLayout>
